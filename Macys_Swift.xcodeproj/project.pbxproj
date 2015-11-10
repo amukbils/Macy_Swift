@@ -14,7 +14,6 @@
 		7ACF692E1BF1C357000E7842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF692C1BF1C357000E7842 /* LaunchScreen.storyboard */; };
 		7ACF69391BF1C357000E7842 /* Macys_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF69381BF1C357000E7842 /* Macys_SwiftTests.swift */; };
 		7ACF69441BF1C357000E7842 /* Macys_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF69431BF1C357000E7842 /* Macys_SwiftUITests.swift */; };
-		7ACF695B1BF1CE28000E7842 /* ProgressHUDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF695A1BF1CE28000E7842 /* ProgressHUDHelper.swift */; };
 		91C894BC04F48C8D8A30EA73 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FE4C7ABF9BC092D62D2C2C /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		7ACF693F1BF1C357000E7842 /* Macys_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Macys_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACF69431BF1C357000E7842 /* Macys_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macys_SwiftUITests.swift; sourceTree = "<group>"; };
 		7ACF69451BF1C357000E7842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7ACF695A1BF1CE28000E7842 /* ProgressHUDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUDHelper.swift; sourceTree = "<group>"; };
 		7ACF695C1BF1CE96000E7842 /* Macys_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Macys_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		D6FE4C7ABF9BC092D62D2C2C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,7 +108,6 @@
 				7ACF695F1BF1CFAF000E7842 /* Alamofire */,
 				7ACF69231BF1C357000E7842 /* AppDelegate.swift */,
 				7ACF69251BF1C357000E7842 /* ViewController.swift */,
-				7ACF695A1BF1CE28000E7842 /* ProgressHUDHelper.swift */,
 				7ACF69271BF1C357000E7842 /* Main.storyboard */,
 				7ACF692A1BF1C357000E7842 /* Assets.xcassets */,
 				7ACF692C1BF1C357000E7842 /* LaunchScreen.storyboard */,
@@ -346,7 +343,6 @@
 			files = (
 				7ACF69261BF1C357000E7842 /* ViewController.swift in Sources */,
 				7ACF69241BF1C357000E7842 /* AppDelegate.swift in Sources */,
-				7ACF695B1BF1CE28000E7842 /* ProgressHUDHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

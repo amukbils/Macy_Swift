@@ -13,15 +13,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // holds the meanings of acronyms
-    private var meanings: Array<AnyObject>? = Array() // init right away
+    private var meanings: Array<AnyObject>! {
+        
+        // update tableview everytime this gets set
+        didSet {
+            self.tableView.reloadData()
+        }
+    }// init right away
     
     // MARK:- LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //  init the tableview
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
+        // init the meanings array
+        self.meanings = Array()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,15 +45,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK:- Generic Methods
     func getAcronymMeanings(acronym:String) {
  
-        Alamofire.request(.GET, "http://httpbin.org/get", parameters: ["foo": "bar"])
+        Alamofire.request(.GET, "http://www.nactem.ac.uk/software/acromine/dictionary.py", parameters: ["sf": acronym])
             .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
                 
+                // get the json
                 if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
+                    //print("JSON: \(JSON)")
+                    self.meanings = JSON.firstObject!!.objectForKey("lfs") as! Array
+                    //print("meanings: ", self.meanings)
+                    
+                    // hide the activity indicator
+                    self.activityIndicator.stopAnimating()
                 }
         }
     }
@@ -48,6 +63,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // MARK:- Button Actions
     @IBAction func searchButtonPressed(sender: AnyObject) {
+        
+        // start the spinner
+        self.activityIndicator.startAnimating()
         
         // hide keyboard
         self.textField.resignFirstResponder()
@@ -64,10 +82,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("sampleCell")
         
+        let text = self.meanings[indexPath.row] as! NSDictionary
         
+        // update title
+        cell?.textLabel!.text = text.objectForKey("lf") as? String
         
+        //print("Cell Text: ", cell?.textLabel?.text)
         
         return cell!
+    }
+    
+    // MARK:- TableView Delegate
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     

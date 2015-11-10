@@ -52,6 +52,10 @@
                                     <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEI-gS-3LV"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ekx-Or-eBD">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -60,7 +64,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IB6-d1-L80" secondAttribute="bottom" id="D1E-OI-XxG"/>
                             <constraint firstItem="cWD-N7-fdw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="11" id="LX3-kJ-wNl"/>
                             <constraint firstItem="IB6-d1-L80" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="MPa-sE-dwe"/>
+                            <constraint firstItem="ekx-Or-eBD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="StS-ys-uaX"/>
                             <constraint firstItem="9Zo-C4-xUz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="dht-k1-e1D"/>
+                            <constraint firstItem="ekx-Or-eBD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="his-mo-5xr"/>
                             <constraint firstItem="9Zo-C4-xUz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iVR-Y4-BBU"/>
                             <constraint firstItem="IB6-d1-L80" firstAttribute="top" secondItem="9Zo-C4-xUz" secondAttribute="bottom" constant="8" id="jKT-Fi-0EY"/>
                             <constraint firstItem="cWD-N7-fdw" firstAttribute="leading" secondItem="9Zo-C4-xUz" secondAttribute="trailing" constant="8" id="xIx-7B-MPT"/>
@@ -69,6 +75,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="ekx-Or-eBD" id="Bvw-xr-Y8G"/>
                         <outlet property="tableView" destination="IB6-d1-L80" id="Sgq-NE-lWm"/>
                         <outlet property="textField" destination="9Zo-C4-xUz" id="jw1-2O-drl"/>
                     </connections>
