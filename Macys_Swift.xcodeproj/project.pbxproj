@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ACF69241BF1C357000E7842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF69231BF1C357000E7842 /* AppDelegate.swift */; };
+		7ACF69261BF1C357000E7842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF69251BF1C357000E7842 /* ViewController.swift */; };
+		7ACF69291BF1C357000E7842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF69271BF1C357000E7842 /* Main.storyboard */; };
+		7ACF692B1BF1C357000E7842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF692A1BF1C357000E7842 /* Assets.xcassets */; };
+		7ACF692E1BF1C357000E7842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF692C1BF1C357000E7842 /* LaunchScreen.storyboard */; };
+		7ACF69391BF1C357000E7842 /* Macys_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF69381BF1C357000E7842 /* Macys_SwiftTests.swift */; };
+		7ACF69441BF1C357000E7842 /* Macys_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF69431BF1C357000E7842 /* Macys_SwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ACF69351BF1C357000E7842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACF69181BF1C357000E7842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACF691F1BF1C357000E7842;
+			remoteInfo = Macys_Swift;
+		};
+		7ACF69401BF1C357000E7842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACF69181BF1C357000E7842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACF691F1BF1C357000E7842;
+			remoteInfo = Macys_Swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7ACF69201BF1C357000E7842 /* Macys_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macys_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACF69231BF1C357000E7842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7ACF69251BF1C357000E7842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7ACF69281BF1C357000E7842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7ACF692A1BF1C357000E7842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ACF692D1BF1C357000E7842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7ACF692F1BF1C357000E7842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACF69341BF1C357000E7842 /* Macys_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Macys_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACF69381BF1C357000E7842 /* Macys_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macys_SwiftTests.swift; sourceTree = "<group>"; };
+		7ACF693A1BF1C357000E7842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACF693F1BF1C357000E7842 /* Macys_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Macys_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACF69431BF1C357000E7842 /* Macys_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macys_SwiftUITests.swift; sourceTree = "<group>"; };
+		7ACF69451BF1C357000E7842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ACF691D1BF1C357000E7842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACF69311BF1C357000E7842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACF693C1BF1C357000E7842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ACF69171BF1C357000E7842 = {
+			isa = PBXGroup;
+			children = (
+				7ACF69221BF1C357000E7842 /* Macys_Swift */,
+				7ACF69371BF1C357000E7842 /* Macys_SwiftTests */,
+				7ACF69421BF1C357000E7842 /* Macys_SwiftUITests */,
+				7ACF69211BF1C357000E7842 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ACF69211BF1C357000E7842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ACF69201BF1C357000E7842 /* Macys_Swift.app */,
+				7ACF69341BF1C357000E7842 /* Macys_SwiftTests.xctest */,
+				7ACF693F1BF1C357000E7842 /* Macys_SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ACF69221BF1C357000E7842 /* Macys_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				7ACF69231BF1C357000E7842 /* AppDelegate.swift */,
+				7ACF69251BF1C357000E7842 /* ViewController.swift */,
+				7ACF69271BF1C357000E7842 /* Main.storyboard */,
+				7ACF692A1BF1C357000E7842 /* Assets.xcassets */,
+				7ACF692C1BF1C357000E7842 /* LaunchScreen.storyboard */,
+				7ACF692F1BF1C357000E7842 /* Info.plist */,
+			);
+			path = Macys_Swift;
+			sourceTree = "<group>";
+		};
+		7ACF69371BF1C357000E7842 /* Macys_SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACF69381BF1C357000E7842 /* Macys_SwiftTests.swift */,
+				7ACF693A1BF1C357000E7842 /* Info.plist */,
+			);
+			path = Macys_SwiftTests;
+			sourceTree = "<group>";
+		};
+		7ACF69421BF1C357000E7842 /* Macys_SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACF69431BF1C357000E7842 /* Macys_SwiftUITests.swift */,
+				7ACF69451BF1C357000E7842 /* Info.plist */,
+			);
+			path = Macys_SwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ACF691F1BF1C357000E7842 /* Macys_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACF69481BF1C357000E7842 /* Build configuration list for PBXNativeTarget "Macys_Swift" */;
+			buildPhases = (
+				7ACF691C1BF1C357000E7842 /* Sources */,
+				7ACF691D1BF1C357000E7842 /* Frameworks */,
+				7ACF691E1BF1C357000E7842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Macys_Swift;
+			productName = Macys_Swift;
+			productReference = 7ACF69201BF1C357000E7842 /* Macys_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ACF69331BF1C357000E7842 /* Macys_SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACF694B1BF1C357000E7842 /* Build configuration list for PBXNativeTarget "Macys_SwiftTests" */;
+			buildPhases = (
+				7ACF69301BF1C357000E7842 /* Sources */,
+				7ACF69311BF1C357000E7842 /* Frameworks */,
+				7ACF69321BF1C357000E7842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACF69361BF1C357000E7842 /* PBXTargetDependency */,
+			);
+			name = Macys_SwiftTests;
+			productName = Macys_SwiftTests;
+			productReference = 7ACF69341BF1C357000E7842 /* Macys_SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7ACF693E1BF1C357000E7842 /* Macys_SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACF694E1BF1C357000E7842 /* Build configuration list for PBXNativeTarget "Macys_SwiftUITests" */;
+			buildPhases = (
+				7ACF693B1BF1C357000E7842 /* Sources */,
+				7ACF693C1BF1C357000E7842 /* Frameworks */,
+				7ACF693D1BF1C357000E7842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACF69411BF1C357000E7842 /* PBXTargetDependency */,
+			);
+			name = Macys_SwiftUITests;
+			productName = Macys_SwiftUITests;
+			productReference = 7ACF693F1BF1C357000E7842 /* Macys_SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ACF69181BF1C357000E7842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Reefna;
+				TargetAttributes = {
+					7ACF691F1BF1C357000E7842 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					7ACF69331BF1C357000E7842 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7ACF691F1BF1C357000E7842;
+					};
+					7ACF693E1BF1C357000E7842 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7ACF691F1BF1C357000E7842;
+					};
+				};
+			};
+			buildConfigurationList = 7ACF691B1BF1C357000E7842 /* Build configuration list for PBXProject "Macys_Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ACF69171BF1C357000E7842;
+			productRefGroup = 7ACF69211BF1C357000E7842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ACF691F1BF1C357000E7842 /* Macys_Swift */,
+				7ACF69331BF1C357000E7842 /* Macys_SwiftTests */,
+				7ACF693E1BF1C357000E7842 /* Macys_SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ACF691E1BF1C357000E7842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACF692E1BF1C357000E7842 /* LaunchScreen.storyboard in Resources */,
+				7ACF692B1BF1C357000E7842 /* Assets.xcassets in Resources */,
+				7ACF69291BF1C357000E7842 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACF69321BF1C357000E7842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACF693D1BF1C357000E7842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ACF691C1BF1C357000E7842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACF69261BF1C357000E7842 /* ViewController.swift in Sources */,
+				7ACF69241BF1C357000E7842 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACF69301BF1C357000E7842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACF69391BF1C357000E7842 /* Macys_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACF693B1BF1C357000E7842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACF69441BF1C357000E7842 /* Macys_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ACF69361BF1C357000E7842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ACF691F1BF1C357000E7842 /* Macys_Swift */;
+			targetProxy = 7ACF69351BF1C357000E7842 /* PBXContainerItemProxy */;
+		};
+		7ACF69411BF1C357000E7842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ACF691F1BF1C357000E7842 /* Macys_Swift */;
+			targetProxy = 7ACF69401BF1C357000E7842 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7ACF69271BF1C357000E7842 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ACF69281BF1C357000E7842 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7ACF692C1BF1C357000E7842 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ACF692D1BF1C357000E7842 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7ACF69461BF1C357000E7842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7ACF69471BF1C357000E7842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ACF69491BF1C357000E7842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Macys_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reefna.Macys-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7ACF694A1BF1C357000E7842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Macys_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reefna.Macys-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7ACF694C1BF1C357000E7842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Macys_SwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reefna.Macys-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Macys_Swift.app/Macys_Swift";
+			};
+			name = Debug;
+		};
+		7ACF694D1BF1C357000E7842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Macys_SwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reefna.Macys-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Macys_Swift.app/Macys_Swift";
+			};
+			name = Release;
+		};
+		7ACF694F1BF1C357000E7842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Macys_SwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reefna.Macys-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Macys_Swift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7ACF69501BF1C357000E7842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Macys_SwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reefna.Macys-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Macys_Swift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ACF691B1BF1C357000E7842 /* Build configuration list for PBXProject "Macys_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACF69461BF1C357000E7842 /* Debug */,
+				7ACF69471BF1C357000E7842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACF69481BF1C357000E7842 /* Build configuration list for PBXNativeTarget "Macys_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACF69491BF1C357000E7842 /* Debug */,
+				7ACF694A1BF1C357000E7842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7ACF694B1BF1C357000E7842 /* Build configuration list for PBXNativeTarget "Macys_SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACF694C1BF1C357000E7842 /* Debug */,
+				7ACF694D1BF1C357000E7842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7ACF694E1BF1C357000E7842 /* Build configuration list for PBXNativeTarget "Macys_SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACF694F1BF1C357000E7842 /* Debug */,
+				7ACF69501BF1C357000E7842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7ACF69181BF1C357000E7842 /* Project object */;
+}
