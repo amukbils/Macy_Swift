@@ -14,6 +14,7 @@
 		7ACF692E1BF1C357000E7842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF692C1BF1C357000E7842 /* LaunchScreen.storyboard */; };
 		7ACF69391BF1C357000E7842 /* Macys_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF69381BF1C357000E7842 /* Macys_SwiftTests.swift */; };
 		7ACF69441BF1C357000E7842 /* Macys_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF69431BF1C357000E7842 /* Macys_SwiftUITests.swift */; };
+		7ACF695B1BF1CE28000E7842 /* ProgressHUDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF695A1BF1CE28000E7842 /* ProgressHUDHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		7ACF693F1BF1C357000E7842 /* Macys_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Macys_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACF69431BF1C357000E7842 /* Macys_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macys_SwiftUITests.swift; sourceTree = "<group>"; };
 		7ACF69451BF1C357000E7842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACF695A1BF1CE28000E7842 /* ProgressHUDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUDHelper.swift; sourceTree = "<group>"; };
+		7ACF695C1BF1CE96000E7842 /* Macys_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Macys_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +100,14 @@
 		7ACF69221BF1C357000E7842 /* Macys_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				7ACF695F1BF1CFAF000E7842 /* Alamofire */,
 				7ACF69231BF1C357000E7842 /* AppDelegate.swift */,
 				7ACF69251BF1C357000E7842 /* ViewController.swift */,
+				7ACF695A1BF1CE28000E7842 /* ProgressHUDHelper.swift */,
 				7ACF69271BF1C357000E7842 /* Main.storyboard */,
 				7ACF692A1BF1C357000E7842 /* Assets.xcassets */,
 				7ACF692C1BF1C357000E7842 /* LaunchScreen.storyboard */,
+				7ACF695C1BF1CE96000E7842 /* Macys_Swift-Bridging-Header.h */,
 				7ACF692F1BF1C357000E7842 /* Info.plist */,
 			);
 			path = Macys_Swift;
@@ -123,6 +129,13 @@
 				7ACF69451BF1C357000E7842 /* Info.plist */,
 			);
 			path = Macys_SwiftUITests;
+			sourceTree = "<group>";
+		};
+		7ACF695F1BF1CFAF000E7842 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +271,7 @@
 			files = (
 				7ACF69261BF1C357000E7842 /* ViewController.swift in Sources */,
 				7ACF69241BF1C357000E7842 /* AppDelegate.swift in Sources */,
+				7ACF695B1BF1CE28000E7842 /* ProgressHUDHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +411,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Macys_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reefna.Macys-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Macys_Swift/Macys_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +425,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Macys_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reefna.Macys-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Macys_Swift/Macys_Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
